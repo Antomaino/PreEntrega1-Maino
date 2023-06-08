@@ -1,0 +1,103 @@
+body {
+    background-color: #ececec;
+}
+
+
+.contenedor {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+}
+
+.contenedor h1 {
+    margin: 5%;
+    background-color: #74A171;
+    columns: 1;
+    padding: 20%;
+}
+
+/*### BOTON BUSCAR ###*/
+form button {
+    border: 0;
+    background-image: linear-gradient(150deg, #019615,
+            #83937B,
+            #dbfac4);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 14px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form button span {
+    background-color: #111;
+    padding: 9px 18px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+form button:hover span {
+    background: none;
+
+}
+
+form button:active {
+    transform: scale(0.9);
+}
+
+.tracking-in-contract {
+    animation: tracking-in-contract 0.4s linear both
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: .6em;
+        opacity: 0
+    }
+
+    40% {
+        opacity: .6
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1
+    }
+}
+
+.zapas {
+    display: flex;
+    width: 100%;
+    padding: .5rem;
+}
+
+img {
+    width: 150px;
+}
+
+/*### PRODUCTOS DESTACADOS ###*/
+
+.kodfun-galeri {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.kodfun-galeri>div {
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.kodfun-galeri>div:hover {
+    flex: 5;
+}
+
+h2 {
+    text-align: center;
+}
